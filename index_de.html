@@ -6,95 +6,30 @@
     <title>d³</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <style>
-        
-        li {
-            margin: 0;
-            padding: 0;
-        }
-    
-        body {
-            font-family: 'Helvetica Light', sans-serif;
-            margin: 20px;
-            background-color: #D2E7D6;
-            color: #0A192F;
-        }
-
-        h1, h2, h3 {
-            color: #0A192F;
-        }
-
-        p, a {
-            color: #0A192F;
-            text-decoration: none;
-        }
-
-        section {
-            margin-bottom: 30px;
-        }
-
-        ul {
-            list-style-type: disc;
-        }
-
-        li {
-            margin-bottom: 10px;
-        }
-
-        .about-button {
-            position: fixed;
-            padding: 10px;
-            background-color: transparent;
-            color: #0A192F; /* Same blue color as the button */
-            text-decoration: none;
-            font-size: 1.7em;
-            cursor: pointer;
-            border: 1px solid  #0A192F;
-            border-radius: 0;
-            z-index: 1000;
-        }
-
-        .about-button, .about-button a {
-            color: #0A192F;
-        }
-        
-        .about-top-left {
-            left: 0px;
-            top: 0px;
-        }
-
-        .contact-info {
+        /* Your existing CSS styles here */
+        /* CSS for image positioning */
+        .image-text-container {
             display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            text-align: left;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
         }
 
-        .contact-info a {
-            margin-bottom: 10px;
-            flex-basis: 100%;
+        .image-text-container img {
+            max-width: 40%;
+            height: auto;
         }
 
         @media screen and (max-width: 600px) {
-            .about-button {
-                position: relative;
-                margin-bottom: 20px;
+            .image-text-container {
+                flex-direction: column;
             }
-            body {
-                margin-left: 20px;
-            }
-        }
-        
-        @media screen and (min-width: 601px) {
-            body {
-                margin-left: 200px;
+            .image-text-container img {
+                max-width: 100%;
+                margin-bottom: 10px;
             }
         }
-
-        section p {
-            margin-bottom: 15px; 
-            line-height: 1.5; 
-        }
-
     </style>
 </head>
 <body>
@@ -107,54 +42,95 @@
     </header>
 
     <main>
+        <!-- Photo 3 and text -->
+        <div class="image-text-container">
+            <img src="photos/photo_3.jpeg" alt="Photo 3">
+            <section>
+                <h2>Abmessungen und Aufbau</h2>
+                <p>
+                    Kompaktes Design: Mit einer Größe von 100 cm in der Höhe, 40 cm in der Breite und 30 cm in der Tiefe passt unsere Growbox perfekt in eine Vielzahl von Wohnräumen, ohne viel Platz in Anspruch zu nehmen.
+                    <br>
+                    Optimierte Raumausnutzung: Das durchdachte Design ermöglicht maximale Effizienz auf minimalem Raum, ideal für den Innenanbau.
+                </p>
+            </section>
+        </div>
 
-        <section>
-            <h2>Abmessungen und Aufbau</h2>
-            <p>
-                Kompaktes Design: Mit einer Größe von 100 cm in der Höhe, 40 cm in der Breite und 30 cm in der Tiefe passt unsere Growbox perfekt in eine Vielzahl von Wohnräumen, ohne viel Platz in Anspruch zu nehmen.
-                <br>
-                Optimierte Raumausnutzung: Das durchdachte Design ermöglicht maximale Effizienz auf minimalem Raum, ideal für den Innenanbau.
-            </p>
-        </section>
+        <!-- Photo 6 and text -->
+        <div class="image-text-container">
+            <section>
+                <h2>Beleuchtung</h2>
+                <p>
+                    Effiziente LED-Grow-Lampe: Ausgestattet mit einer 60-Watt-LED-Grow-Lampe, die speziell für Pflanzenwachstum und -blüte entwickelt wurde, sorgt unsere Box für die richtige Lichtmenge in jeder Wachstumsphase.
+                    <br>
+                    Höhenverstellbare Beleuchtung: Die Lampe kann leicht in der Höhe verstellt werden, um den sich ändernden Bedürfnissen der Pflanzen während ihres Wachstumszyklus gerecht zu werden.
+                </p>
+            </section>
+            <img src="photos/photo_6.jpeg" alt="Photo 6">
+        </div>
 
-        <section>
-            <h2>Beleuchtung</h2>
-            <p>
-                Effiziente LED-Grow-Lampe: Ausgestattet mit einer 60-Watt-LED-Grow-Lampe, die speziell für Pflanzenwachstum und -blüte entwickelt wurde, sorgt unsere Box für die richtige Lichtmenge in jeder Wachstumsphase.
-                <br>
-                Höhenverstellbare Beleuchtung: Die Lampe kann leicht in der Höhe verstellt werden, um den sich ändernden Bedürfnissen der Pflanzen während ihres Wachstumszyklus gerecht zu werden.
-            </p>
-        </section>
+        <!-- Photo 5 and text -->
+        <div class="image-text-container">
+            <img src="photos/photo_5.jpeg" alt="Photo 5">
+            <section>
+                <h2>Ertrag</h2>
+                <p>
+                    Optimierter Pflanzenertrag: Mit der richtigen Pflege und Einstellung können Nutzer einen Ertrag von 40-60 Gramm alle 70 Tage erwarten, was die Effektivität unserer Growbox unterstreicht.
+                </p>
+            </section>
+        </div>
 
-        <section>
-            <h2>Ertrag</h2>
-            <p>
-                Optimierter Pflanzenertrag: Mit der richtigen Pflege und Einstellung können Nutzer einen Ertrag von 40-60 Gramm alle 70 Tage erwarten, was die Effektivität unserer Growbox unterstreicht.
-            </p>
-        </section>
+        <!-- Photo 4 and text -->
+        <div class="image-text-container">
+            <section>
+                <h2>Belüftung</h2>
+                <p>
+                    Innovatives Belüftungssystem: Unsere Growbox verfügt über Abluftventilatoren mit integrierten Aktivkohlefiltern, die nicht nur eine frische Luftzirkulation gewährleisten, sondern auch Gerüche effektiv filtern und minimieren.
+                    <br>
+                    Anpassbare Umgebung: Die Belüftung kann an die spezifischen Anforderungen Ihrer Pflanzen angepasst werden, um optimale Wachstumsbedingungen zu schaffen.
+                </p>
+            </section>
+            <img src="photos/photo_4.jpeg" alt="Photo 4">
+        </div>
 
-        <section>
-            <h2>Belüftung</h2>
-            <p>
-                Innovatives Belüftungssystem: Unsere Growbox verfügt über Abluftventilatoren mit integrierten Aktivkohlefiltern, die nicht nur eine frische Luftzirkulation gewährleisten, sondern auch Gerüche effektiv filtern und minimieren.
-                <br>
-                Anpassbare Umgebung: Die Belüftung kann an die spezifischen Anforderungen Ihrer Pflanzen angepasst werden, um optimale Wachstumsbedingungen zu schaffen.
-            </p>
-        </section>
+        <!-- Photo 7 and text -->
+        <div class="image-text-container">
+            <img src="photos/photo_7.jpeg" alt="Photo 7">
+            <section>
+                <h2>Steuerung und Überwachung</h2>
+                <p>
+                    Fortgeschrittene Steuerung: Mit der PWM-Regelung können die Lüfter präzise eingestellt werden, um eine ideale Balance zwischen Luftzirkulation und Geräuschpegel zu finden.
+                    <br>
+                    Umfassende Sensorik: Unsere Box ist mit Sensoren für Temperatur, Luftfeuchtigkeit und Bodenfeuchtigkeit ausgestattet, die ständig die Umgebungsbedingungen überwachen und anpassen, um das Wachstum Ihrer Pflanzen zu optimieren.
+                </p>
+            </section>
+        </div>
 
-        <section>
-            <h2>Steuerung und Überwachung</h2>
-            <p>
-                Fortgeschrittene Steuerung: Mit der PWM-Regelung können die Lüfter präzise eingestellt werden, um eine ideale Balance zwischen Luftzirkulation und Geräuschpegel zu finden.
-                <br>
-                Umfassende Sensorik: Unsere Box ist mit Sensoren für Temperatur, Luftfeuchtigkeit und Bodenfeuchtigkeit ausgestattet, die ständig die Umgebungsbedingungen überwachen und anpassen, um das Wachstum Ihrer Pflanzen zu optimieren.
-            </p>
-        </section>
+        <!-- Photo 2 and text -->
+        <div class="image-text-container">
+            <section>
+                <h2>Preis je nach Ausstattung</h2>
+                <p>750-1200€</p>
+            </section>
+            <img src="photos/photo_2.jpeg" alt="Photo 2">
+        </div>
 
-        <section>
-            <h2>Preis je nach Ausstattung</h2>
-            <p>750-1200€</p>
-        </section>
+        <!-- Photo 1 and text -->
+        <div class="image-text-container">
+            <img src="photos/photo_1.jpeg" alt="Photo 1">
+            <section>
+                <h2>Preis je nach Ausstattung</h2>
+                <p>750-1200€</p>
+            </section>
+        </div>
+
+        <!-- Photo 9 and text -->
+        <div class="image-text-container">
+            <section>
+                <h2>Preis je nach Ausstattung</h2>
+                <p>750-1200€</p>
+            </section>
+            <img src="photos/photo_9.jpeg" alt="Photo 9">
+        </div>
 
     </main>
 </body>
