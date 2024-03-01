@@ -6,7 +6,95 @@
     <title>d³</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <style>
-        /* Your existing CSS styles here */
+            
+        li {
+            margin: 0;
+            padding: 0;
+        }
+    
+        body {
+            font-family: 'Helvetica Light', sans-serif;
+            margin: 20px;
+            background-color: #D2E7D6;
+            color: #0A192F;
+        }
+
+        h1, h2, h3 {
+            color: #0A192F;
+        }
+
+        p, a {
+            color: #0A192F;
+            text-decoration: none;
+        }
+
+        section {
+            margin-bottom: 30px;
+        }
+
+        ul {
+            list-style-type: disc;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .about-button {
+            position: fixed;
+            padding: 10px;
+            background-color: transparent;
+            color: #0A192F; /* Same blue color as the button */
+            text-decoration: none;
+            font-size: 1.7em;
+            cursor: pointer;
+            border: 1px solid  #0A192F;
+            border-radius: 0;
+            z-index: 1000;
+        }
+
+        .about-button, .about-button a {
+            color: #0A192F;
+        }
+        
+        .about-top-left {
+            left: 0px;
+            top: 0px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            text-align: left;
+        }
+
+        .contact-info a {
+            margin-bottom: 10px;
+            flex-basis: 100%;
+        }
+
+        @media screen and (max-width: 600px) {
+            .about-button {
+                position: relative;
+                margin-bottom: 20px;
+            }
+            body {
+                margin-left: 20px;
+            }
+        }
+        
+        @media screen and (min-width: 601px) {
+            body {
+                margin-left: 200px;
+            }
+        }
+
+        section p {
+            margin-bottom: 15px; 
+            line-height: 1.5; 
+        }
+
         /* CSS for image positioning */
         .image-text-container {
             display: flex;
